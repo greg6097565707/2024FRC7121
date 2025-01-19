@@ -1,0 +1,62 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Pick Up AMP Side"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "groundPickup"
+          }
+        },
+        {
+          "type": "deadline",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "Intake AMP Side"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "runGroundIntake"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "stopGroundIntake"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Return from AMP Side"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

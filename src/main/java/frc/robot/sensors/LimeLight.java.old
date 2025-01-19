@@ -1,0 +1,34 @@
+package frc.robot.sensors;
+
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.lib.LimelightHelpers;
+import frc.robot.Robot;
+import frc.robot.RobotContainer;
+
+public class LimeLight extends SubsystemBase {
+    private boolean tracking = true;
+    public LimeLight() {
+
+    }
+    public void tracking() {
+        // System.out.println(Robot.limelight_range_proportional());
+    }
+    public void periodic() {
+        if (LimelightHelpers.getTY("limelight") != 0) {
+            RobotContainer.m_lights.limelightDetect();
+        }
+        // var dist = Math.min(7, LimelightHelpers.getBotPose("limelight")[9]);
+        // if (dist < 2.7) {
+        //     RobotContainer.m_shooter.autoShot();
+        // }
+        // if (dist < 1.7) {
+        //     if (RobotContainer.m_shooter.isNoteInShooter()) {
+        //         RobotContainer.m_intake.intakeNote();
+        //     } else {
+        //         RobotContainer.m_shooter.stopShooter();
+        //         RobotContainer.m_intake.stopHandoff();;
+        //     }
+
+        // }
+    }
+}

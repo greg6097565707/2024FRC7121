@@ -1,0 +1,22 @@
+{
+  "robotWidth": 0.9,
+  "robotLength": 0.9,
+  "holonomicMode": true,
+  "pathFolders": [
+    "BlueBanner",
+    "New New Folder",
+    "RedSubwoofer",
+    "ScoreBlue"
+  ],
+  "autoFolders": [
+    "New Folder",
+    "New New Folder",
+    "New New New Folder",
+    "New New New New Folder"
+  ],
+  "defaultMaxVel": 3.5,
+  "defaultMaxAccel": 1.0,
+  "defaultMaxAngVel": 120.0,
+  "defaultMaxAngAccel": 80.0,
+  "maxModuleSpeed": 4.5
+}

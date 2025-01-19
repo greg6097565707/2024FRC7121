@@ -1,0 +1,154 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "spinShooter"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.25
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "releaseNote"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntake"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "pickupNote"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "RedCenter"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ReturnRedCenter"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.2
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "releaseNote"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntake"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "pickupNote"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "RedStage"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ReturnRedStage"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "releaseNote"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntake"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "pickupNote"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "RedAMP"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ReturnRedAMP"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "releaseNote"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "RedMiddle"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

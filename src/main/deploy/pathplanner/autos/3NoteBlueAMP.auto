@@ -1,0 +1,112 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "shootNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "releaseNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "BlueCenterNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "pickupNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntake"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "limelightShot"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "BlueAMPNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "pickupNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntake"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 2.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "limelightShot"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "BlueAMPNoteRecenter"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

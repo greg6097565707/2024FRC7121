@@ -1,0 +1,143 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "shootNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "releaseNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntake"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "pickupNote"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "BlueCenterNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.2
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "limelightShot"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "BlueStageNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "pickupNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntake"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "limelightShot"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "BlueStageNoteRecenter"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "pickupNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntake"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "limelightShot"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

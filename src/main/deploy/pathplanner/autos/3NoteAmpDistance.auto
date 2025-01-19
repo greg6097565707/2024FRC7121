@@ -1,0 +1,62 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "autoShot"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "stopShooter"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "AmpSideAmpNote"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "groundIntakeNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "handoffNote"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "TurnRobotLimelight"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "distanceShot"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}
